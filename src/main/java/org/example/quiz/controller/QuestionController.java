@@ -1,4 +1,4 @@
-package org.example.quiz;
+package org.example.quiz.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,6 +11,6 @@ public class QuestionController {
 
     @GetMapping("allQuestions")
     public String getAllQuestions(){
-        return "works?";
+        return questionService.getAllQuestions();
     }
 }
